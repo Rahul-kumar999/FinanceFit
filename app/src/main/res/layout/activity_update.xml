@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_200"
+    android:paddingRight="20sp"
+    android:paddingLeft="20sp"
+    android:paddingTop="10dp"
+    tools:context=".AddTransaction"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="#370381"
+        android:id="@+id/ToolbarDash">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:text="Update Transaction"
+            android:textAlignment="center"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/user_amount_update"
+        android:hint="Enter New Amount"
+        android:inputType="number"
+        android:padding="15sp"
+        android:background="@drawable/edt_text_bg"
+        android:layout_marginTop="20sp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:textAlignment="textStart"
+        android:gravity="start"
+        android:hint="Enter New Details"
+        android:id="@+id/user_desc_update"
+        android:inputType="text"
+        android:padding="15sp"
+        android:background="@drawable/edt_text_bg"
+        android:layout_marginTop="20sp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:layout_width="8dp"
+            android:layout_height="wrap_content"
+            android:text="Expense"
+            android:textSize="20dp"
+            android:textColor="#F30606"
+            android:id="@+id/expense_check1"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/edt_text_bg"
+            android:layout_weight="1"/>
+        <CheckBox
+            android:layout_width="8dp"
+            android:layout_height="wrap_content"
+            android:text="Income"
+            android:textColor="#4CAF50"
+            android:textSize="20dp"
+            android:id="@+id/income_check1"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/edt_text_bg"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="UPDATE"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:background="#2C9DF6"
+        android:id="@+id/btnUpdate"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="DELETE"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:background="#2C9DF6"
+        android:id="@+id/btnDelete"/>
+
+
+</LinearLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/purse"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FinanceFit"
+        tools:targetApi="31">
+        <activity
+            android:name=".AddIncome"
+            android:exported="false" />
+        <activity
+            android:name=".Income"
+            android:exported="false" />
+        <activity
+            android:name=".AddLoan"
+            android:exported="false" />
+        <activity
+            android:name=".Loan"
+            android:exported="false" />
+        <activity
+            android:name=".Savings"
+            android:exported="false" />
+        <activity
+            android:name=".Portfolio"
+            android:exported="false" />
+        <activity
+            android:name=".AddSavings"
+            android:exported="false" />
+        <activity
+            android:name=".AddPortfolio"
+            android:exported="false" />
+        <activity
+            android:name=".Investing"
+            android:exported="false" />
+        <activity
+            android:name=".Invest"
+            android:exported="false" />
+        <activity
+            android:name=".Notification"
+            android:exported="false" />
+        <activity
+            android:name=".UpdateProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UpdateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Summary"
+            android:exported="false" />
+        <activity
+            android:name=".AddTransaction"
+            android:exported="false" />
+        <activity
+            android:name=".Profile"
+            android:exported="false" />
+        <activity
+            android:name=".Settings"
+            android:exported="false" />
+        <activity
+            android:name=".Introprofile"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Signup"
+            android:exported="false" />
+        <activity
+            android:name=".Login"
+            android:exported="false" />
+        <activity
+            android:name=".Intro"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

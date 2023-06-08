@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">FinanceFit</string>
+
+    <string name="Sync_pref">Sync</string>
+    <string name="sync_pref_summary">Get All Your Transaction, Investment, Income, Expense Details On All Your Devices.</string>
+    <string name="pref_syncConnectionType">Sync Connection Type</string>
+    <string name="pref_syncConnectionType_dialog_title"> Perform Sync Using</string>
+    <string name="pref_syncConnectionType_default_value">Wi-Fi</string>
+    <string name="pref_syncConnectionType_summary">Wi-Fi</string>
+    <string name="storage_view_title">Sync Settings</string>
+    <string-array name="pref_syncConnectionType_entries">
+        <item>Wi-Fi</item>
+        <item>Mobile Data</item>
+        <item>Wi-Fi/Mobile Data</item>
+    </string-array>
+    <string-array name="pref_syncConnectionType_values">
+        <item>Wi-Fi</item>
+        <item>Mobile Data</item>
+        <item>Wi-Fi/Mobile Data</item>
+    </string-array>
+
+</resources>

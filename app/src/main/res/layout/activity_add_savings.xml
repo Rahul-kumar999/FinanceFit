@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="20sp"
+    android:paddingLeft="20sp"
+    android:background="#8751E6"
+    android:paddingTop="10dp"
+    tools:context=".UpdateProfileActivity"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="#370381"
+        android:id="@+id/ToolbarDash">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:text="ADD DEPOSITS/ SECURITIES"
+            android:textAlignment="center"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="Please Fill In The Required Details To Register "
+        android:textSize="27dp"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:layout_width="8dp"
+            android:layout_height="wrap_content"
+            android:text="Deposits"
+            android:textSize="20dp"
+            android:textColor="#4CAF50"
+            android:id="@+id/expense_check"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/edt_text_bg"
+            android:layout_weight="1"/>
+        <CheckBox
+            android:layout_width="8dp"
+            android:layout_height="wrap_content"
+            android:text="Securities"
+            android:textColor="#4CAF50"
+            android:textSize="20dp"
+            android:id="@+id/income_check"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/edt_text_bg"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25sp"
+        android:text="Amount Of Investment"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/user_amount_add"
+        android:hint="Enter Amount"
+        android:inputType="number"
+        android:padding="15sp"
+        android:background="@drawable/edt_text_bg"
+        android:layout_marginTop="0sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2sp"
+        android:text="Name Of Your Bank/ Securiity Scheme"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/user_bank_add"
+        android:hint="Enter Bank Name"
+        android:inputType="text"
+        android:padding="15sp"
+        android:background="@drawable/edt_text_bg"
+        android:layout_marginTop="0sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2sp"
+        android:text="Date of Investment"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/user_date_add"
+        android:hint="Enter Starting Date"
+        android:inputType="date"
+        android:padding="15sp"
+        android:background="@drawable/edt_text_bg"
+        android:layout_marginTop="0sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2sp"
+        android:text="Maturity Date"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/user_endDate_add"
+        android:hint="Enter End Date"
+        android:inputType="date"
+        android:padding="15sp"
+        android:background="@drawable/edt_text_bg"
+        android:layout_marginTop="0sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2sp"
+        android:text="Type (FD/RD/NPS/PPF/SGB's/LIC Plans)"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/user_type_add"
+        android:hint="Enter Type of Investment"
+        android:inputType="text"
+        android:padding="15sp"
+        android:background="@drawable/edt_text_bg"
+        android:layout_marginTop="0sp"/>
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="SAVE"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:background="#2C9DF6"
+        android:id="@+id/btnSave"/>
+
+</LinearLayout>
