@@ -1,19 +1,19 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="75dp"
-    android:layout_marginStart="16dp"
-    android:layout_marginTop="4dp"
+    android:layout_height="75sp"
+    android:layout_marginStart="16sp"
+    android:layout_marginTop="4sp"
     android:background="@drawable/view_holder_background"
     android:layout_marginEnd="16sp"
     android:id="@+id/ConstLayout"
-    android:layout_marginBottom="4dp">
+    android:layout_marginBottom="4sp">
 
     <ImageView
         android:id="@+id/logoImg"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="16dp"
+        android:layout_width="40sp"
+        android:layout_height="40sp"
+        android:layout_marginStart="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -23,9 +23,9 @@
         android:id="@+id/IncomeLoss"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="8sp"
         android:hint="Desc"
-        android:textSize="20dp"
+        android:textSize="20sp"
         android:textColor="@color/white"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/logoImg"
@@ -33,12 +33,12 @@
 
 
     <View
-        android:layout_width="30dp"
-        android:layout_height="35dp"
+        android:layout_width="30sp"
+        android:layout_height="35sp"
         android:id="@+id/priority_one"
         android:background="@drawable/green_shape"
-        android:layout_marginLeft="40dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="40sp"
+        android:layout_marginBottom="20sp"
         app:layout_constraintLeft_toRightOf="@id/amount"
         app:layout_constraintTop_toTopOf="@id/amount" />
 
@@ -46,8 +46,8 @@
         android:id="@+id/amount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="96dp"
+        android:layout_marginTop="4sp"
+        android:layout_marginEnd="96sp"
         android:text="200"
         android:textColor="#fff"
         android:textSize="20sp"

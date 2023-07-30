@@ -9,8 +9,8 @@
 </item>
     <item
         android:drawable="@drawable/float_icon"
-        android:top="15dp"
-        android:right="15dp"
-        android:left="15dp"
-        android:bottom="15dp"/>
+        android:top="15sp"
+        android:right="15sp"
+        android:left="15sp"
+        android:bottom="15sp"/>
 </layer-list>

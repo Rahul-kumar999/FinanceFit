@@ -7,180 +7,185 @@
     android:background="#130041"
     tools:context=".Invest">
 
-
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="250dp"
-            android:layout_margin="20dp"
-            android:background="@drawable/top_background_main_activity">
-
-            <ImageView
-                android:id="@+id/imageView3"
-                android:layout_width="75dp"
-                android:layout_height="75dp"
-                android:layout_marginStart="24dp"
-                android:layout_marginTop="24dp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                android:background="@drawable/circlebg"
-                android:outlineProvider="background"
-                app:srcCompat="@drawable/profilen"/>
-
-            <TextView
-                android:id="@+id/txtName"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="24dp"
-                android:text="Hello "
-                android:textColor="@color/white"
-                android:textSize="16sp"
-                android:textStyle="bold"
-                app:layout_constraintBottom_toBottomOf="@+id/imageView3"
-                app:layout_constraintStart_toEndOf="@+id/imageView3"
-                app:layout_constraintTop_toTopOf="@+id/imageView3" />
-
-
-            <TextView
-                android:id="@+id/textView10"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:text="Your Investment Value"
-                android:textColor="@color/white"
-                android:textSize="16sp"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageView3" />
-
-            <TextView
-                android:id="@+id/monthlyBudget"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="0000"
-                android:textColor="@color/white"
-                android:textSize="45sp"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="@+id/textView10"
-                app:layout_constraintStart_toStartOf="@+id/textView10"
-                app:layout_constraintTop_toBottomOf="@+id/textView10" />
-
-            <TextView
-                android:id="@+id/textView12"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text=".00"
-                android:textColor="@color/white"
-                android:textSize="30sp"
-                app:layout_constraintBottom_toBottomOf="@+id/monthlyBudget"
-                app:layout_constraintStart_toEndOf="@+id/monthlyBudget"
-                app:layout_constraintTop_toBottomOf="@+id/textView10"
-                app:layout_constraintVertical_bias="0.78" />
-
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:layout_marginTop="25dp"
-            android:orientation="horizontal">
-
-            <androidx.cardview.widget.CardView
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_margin="15dp"
-                android:backgroundTint="#935EF1"
-                android:layout_weight="1">
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/imgPort"
-                        android:background="@drawable/portfolio"
-                        android:layout_centerHorizontal="true"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Your Portfolio"
-                        android:textSize="26sp"
-                        android:textColor="#fff"
-                        android:textStyle="bold"
-                        android:layout_marginTop="129dp"
-                        android:layout_centerHorizontal="true"/>
-                </RelativeLayout>
-            </androidx.cardview.widget.CardView>
-            <androidx.cardview.widget.CardView
+                android:layout_height="250sp"
+                android:layout_margin="20sp"
+                android:background="@drawable/top_background_main_activity">
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="75sp"
+                    android:layout_height="75sp"
+                    android:layout_marginStart="24sp"
+                    android:layout_marginTop="24sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:background="@drawable/circlebg"
+                    android:outlineProvider="background"
+                    app:srcCompat="@drawable/profilen"/>
+
+                <TextView
+                    android:id="@+id/txtName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24sp"
+                    android:text="Hello "
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+                    app:layout_constraintStart_toEndOf="@+id/imageView3"
+                    app:layout_constraintTop_toTopOf="@+id/imageView3" />
+
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16sp"
+                    android:text="Your Investment Value"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+                <TextView
+                    android:id="@+id/monthlyBudget"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0000"
+                    android:textColor="@color/white"
+                    android:textSize="45sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/textView10"
+                    app:layout_constraintStart_toStartOf="@+id/textView10"
+                    app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=".00"
+                    android:textColor="@color/white"
+                    android:textSize="30sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/monthlyBudget"
+                    app:layout_constraintStart_toEndOf="@+id/monthlyBudget"
+                    app:layout_constraintTop_toBottomOf="@+id/textView10"
+                    app:layout_constraintVertical_bias="0.78" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:backgroundTint="#935EF1"
-                android:layout_margin="15dp"
-                android:background="@drawable/top_background_main_activity"
-                android:layout_weight="1">
-                <RelativeLayout
+                android:layout_height="200sp"
+                android:layout_marginTop="25sp"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/imgSave"
-                        android:background="@drawable/saving"
-                        android:layout_centerHorizontal="true"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Your Savings"
-                        android:textSize="26sp"
-                        android:textColor="#fff"
-                        android:textStyle="bold"
-                        android:layout_marginTop="129dp"
-                        android:layout_centerHorizontal="true"/>
+                    android:layout_height="match_parent"
+                    android:layout_margin="15sp"
+                    android:backgroundTint="#935EF1"
+                    android:layout_weight="1">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/imgPort"
+                            android:background="@drawable/portfolio"
+                            android:layout_centerHorizontal="true"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Your Portfolio"
+                            android:textSize="20sp"
+                            android:textColor="#fff"
+                            android:textStyle="bold"
+                            android:layout_marginTop="129sp"
+                            android:layout_centerHorizontal="true"/>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="#935EF1"
+                    android:layout_margin="15sp"
+                    android:background="@drawable/top_background_main_activity"
+                    android:layout_weight="1">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/imgSave"
+                            android:background="@drawable/saving"
+                            android:layout_centerHorizontal="true"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Your Savings"
+                            android:textSize="20sp"
+                            android:textColor="#fff"
+                            android:textStyle="bold"
+                            android:layout_marginTop="129sp"
+                            android:layout_centerHorizontal="true"/>
 
-                </RelativeLayout>
+                    </RelativeLayout>
 
-            </androidx.cardview.widget.CardView>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15sp"
+                android:text="* Your Portfolio consists of the Wealth Invested in Stock Market/ Assets/ Share Market/ Real State/ Mutual Funds etc"
+                android:textColor="#fff"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15sp"
+                android:layout_marginLeft="15sp"
+                android:textColor="#fff"
+                android:text="* Your Savings consists of the Wealth Invested in Government Securities/ Bank Deposits(FD/RD)/ PPF/ SGB's/ NPS etc " />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonBack"
+                style="@android:style/Widget.Button"
+                android:layout_width="250sp"
+                android:layout_gravity="center"
+                android:layout_height="40sp"
+                android:layout_marginTop="25sp"
+                android:layout_marginStart="40sp"
+                android:layout_marginEnd="40sp"
+                android:background="#935EF1"
+                android:text="Back"
+                android:textColor="#ffffff"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
         </LinearLayout>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="15dp"
-            android:text="* Your Portfolio consists of the Wealth Invested in Stock Market/ Assets/ Share Market/ Real State/ Mutual Funds etc"
-            android:textColor="#fff"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="15dp"
-            android:layout_marginLeft="15dp"
-            android:textColor="#fff"
-            android:text="* Your Svings consists of the Wealth Invested in Government Securities/ Bank Deposits(FD/RD)/ PPF/ SGB's/ NPS etc " />
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/buttonBack"
-            style="@android:style/Widget.Button"
-            android:layout_width="250dp"
-            android:layout_gravity="center"
-            android:layout_height="40dp"
-            android:layout_marginTop="50dp"
-            android:layout_marginStart="40dp"
-            android:layout_marginEnd="40dp"
-            android:background="#935EF1"
-            android:text="Back"
-            android:textColor="#ffffff"
-            android:textSize="17sp"
-            android:textStyle="bold" />
 
-    </LinearLayout>
-
-
-
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

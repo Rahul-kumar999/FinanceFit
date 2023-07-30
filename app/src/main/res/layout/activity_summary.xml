@@ -1,254 +1,265 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="@color/purple_200"
-    tools:context=".Summary">
-
-    <RelativeLayout
+    android:background="@color/purple_200">
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="?actionBarSize"
-        android:background="#370381"
-        android:layout_margin="15dp"
-        android:id="@+id/ToolbarDash">
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/purple_200"
+        tools:context=".Summary">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="#370381"
+            android:layout_margin="15sp"
+            android:id="@+id/ToolbarDash">
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="23sp"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:text="SUMMARY"
+                android:textAlignment="center"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            android:textColor="#fff"
-            android:text="SUMMARY"
-            android:textAlignment="center"
-            android:layout_centerVertical="true"/>
-    </RelativeLayout>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="15dp"
-        android:text="Transaction Summary"
-        android:textSize="27dp"
-        android:textStyle="bold"/>
-    <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_marginTop="0dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp">
-        <LinearLayout
+            android:layout_margin="15sp"
+            android:text="Transaction Summary"
+            android:textColor="#673AB7"
+            android:textSize="27sp"
+            android:textStyle="bold"/>
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="10dp"
-            android:layout_gravity="center">
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Income"
-                    android:textSize="20sp"
-                    android:textColor="#000"
-                    android:layout_alignParentLeft="true"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="0000"
-                    android:id="@+id/txtIncome"
-                    android:textSize="20sp"
-                    android:textColor="#0FE318"
-                    android:layout_alignParentRight="true"/>
-
-
-            </RelativeLayout>
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Expense"
-                    android:textSize="20sp"
-                    android:textColor="#000"
-                    android:layout_alignParentLeft="true"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="0000"
-                    android:textSize="20sp"
-                    android:id="@+id/txtExpense"
-                    android:textColor="#F30909"
-                    android:layout_alignParentRight="true"/>
-
-
-            </RelativeLayout>
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Balance (A)"
-                    android:textSize="20sp"
-                    android:textColor="#000"
-                    android:layout_alignParentLeft="true"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="0000"
-                    android:textSize="20sp"
-                    android:id="@+id/txtBalance"
-                    android:textColor="#090909"
-                    android:layout_alignParentRight="true"/>
-
-
-            </RelativeLayout>
-
-
-        </LinearLayout>
-
-    </androidx.cardview.widget.CardView>
-    <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="90dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginLeft="40dp"
-        android:layout_marginRight="40dp">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="10dp"
-            android:layout_gravity="center">
+            android:layout_height="100sp"
+            android:layout_marginTop="0sp"
+            android:backgroundTint="#fff"
+            android:background="#fff"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
-                <TextView
+                android:orientation="vertical"
+                android:padding="10sp"
+                android:layout_gravity="center">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Income"
+                        android:textSize="20sp"
+                        android:textColor="#000"
+                        android:layout_alignParentLeft="true"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0000"
+                        android:id="@+id/txtIncome"
+                        android:textSize="20sp"
+                        android:textColor="#0FE318"
+                        android:layout_alignParentRight="true"/>
+
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Expense"
+                        android:textSize="20sp"
+                        android:textColor="#000"
+                        android:layout_alignParentLeft="true"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0000"
+                        android:textSize="20sp"
+                        android:id="@+id/txtExpense"
+                        android:textColor="#F30909"
+                        android:layout_alignParentRight="true"/>
+
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Balance (A)"
+                        android:textSize="20sp"
+                        android:textColor="#000"
+                        android:layout_alignParentLeft="true"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0000"
+                        android:textSize="20sp"
+                        android:id="@+id/txtBalance"
+                        android:textColor="#090909"
+                        android:layout_alignParentRight="true"/>
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="90sp"
+            android:layout_marginTop="25sp"
+            android:backgroundTint="#fff"
+            android:layout_marginLeft="40sp"
+            android:layout_marginRight="40sp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10sp"
+                android:layout_gravity="center">
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Combined Balance(Budget+ A)"
-                    android:textSize="18sp"
-                    android:textColor="#000"/>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="0000.00"
-                    android:textColor="#1AF423"
-                    android:textStyle="bold"
-                    android:textSize="40sp"
-                    android:gravity="center"
-                    android:id="@+id/txtComBal"/>
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Combined Balance(Budget+ A)"
+                        android:textSize="18sp"
+                        android:textColor="#000"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="0000.00"
+                        android:textColor="#1AF423"
+                        android:textStyle="bold"
+                        android:textSize="30sp"
+                        android:gravity="center"
+                        android:id="@+id/txtComBal"/>
+
+                </LinearLayout>
+
 
             </LinearLayout>
 
 
-        </LinearLayout>
 
-
-
-    </androidx.cardview.widget.CardView>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="15dp"
-        android:text="Income Summary"
-        android:textSize="27dp"
-        android:textStyle="bold"/>
-    <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="90dp"
-        android:layout_marginTop="0dp"
-        android:layout_marginLeft="40dp"
-        android:layout_marginRight="40dp">
-        <LinearLayout
-            android:layout_width="match_parent"
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="10dp"
-            android:layout_gravity="center">
+            android:layout_margin="15sp"
+            android:text="Income Summary"
+            android:textColor="#9C27B0"
+            android:textSize="27sp"
+            android:textStyle="bold"/>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="90sp"
+            android:layout_marginTop="0sp"
+            android:backgroundTint="#fff"
+            android:layout_marginLeft="40sp"
+            android:layout_marginRight="40sp">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
-                <TextView
+                android:orientation="vertical"
+                android:padding="10sp"
+                android:layout_gravity="center">
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Total Income"
-                    android:textSize="20sp"
-                    android:textColor="#000"/>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="0000.00"
-                    android:textColor="#1AF423"
-                    android:textStyle="bold"
-                    android:textSize="40sp"
-                    android:gravity="center"
-                    android:id="@+id/txtComInc"/>
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Total Income"
+                        android:textSize="20sp"
+                        android:textColor="#000"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="0000.00"
+                        android:textColor="#1AF423"
+                        android:textStyle="bold"
+                        android:textSize="30sp"
+                        android:gravity="center"
+                        android:id="@+id/txtComInc"/>
+
+                </LinearLayout>
+
 
             </LinearLayout>
 
 
-        </LinearLayout>
 
-
-
-    </androidx.cardview.widget.CardView>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="15dp"
-        android:text="EMI Summary(Per Month)"
-        android:textSize="27dp"
-        android:textStyle="bold"/>
-    <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="90dp"
-        android:layout_marginTop="0dp"
-        android:layout_marginLeft="40dp"
-        android:layout_marginRight="40dp">
-        <LinearLayout
-            android:layout_width="match_parent"
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="10dp"
-            android:layout_gravity="center">
+            android:layout_margin="15sp"
+            android:text="EMI Summary(Per Month)"
+            android:textColor="#9C27B0"
+            android:textSize="27sp"
+            android:textStyle="bold"/>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="90sp"
+            android:layout_marginTop="0sp"
+            android:backgroundTint="#fff"
+            android:layout_marginLeft="40sp"
+            android:layout_marginRight="40sp">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
-                <TextView
+                android:orientation="vertical"
+                android:padding="10sp"
+                android:layout_gravity="center">
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Total EMI"
-                    android:textSize="20sp"
-                    android:textColor="#000"/>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="0000.00"
-                    android:textColor="#1AF423"
-                    android:textStyle="bold"
-                    android:textSize="40sp"
-                    android:gravity="center"
-                    android:id="@+id/txtComLoan"/>
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Total EMI"
+                        android:textSize="20sp"
+                        android:textColor="#000"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="0000.00"
+                        android:textColor="#1AF423"
+                        android:textStyle="bold"
+                        android:textSize="30sp"
+                        android:gravity="center"
+                        android:id="@+id/txtComLoan"/>
+
+                </LinearLayout>
+
 
             </LinearLayout>
 
 
-        </LinearLayout>
 
+        </androidx.cardview.widget.CardView>
 
-
-    </androidx.cardview.widget.CardView>
-
-
-</LinearLayout>
+    </LinearLayout>
+</ScrollView>

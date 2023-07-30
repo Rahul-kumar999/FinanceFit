@@ -4,14 +4,14 @@ plugins {
 }
 
 android {
-    namespace 'com.example.financefit'
+    namespace 'com.devrahul.financefit'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.example.financefit"
+        applicationId "com.devrahul.financefit"
         minSdk 25
         targetSdk 33
-        versionCode 1
+        versionCode 4
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -30,6 +30,7 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+    buildToolsVersion '33.0.2'
 }
 
 dependencies {
