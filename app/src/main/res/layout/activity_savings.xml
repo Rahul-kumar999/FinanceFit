@@ -18,6 +18,7 @@
             android:layout_width="match_parent"
             android:layout_height="?actionBarSize"
             android:background="#370381"
+            android:layout_marginTop="50sp"
             android:id="@+id/ToolbarDash">
 
             <TextView
@@ -57,7 +58,7 @@
         <androidx.appcompat.widget.AppCompatButton
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="0sp"
+            android:layout_marginTop="100sp"
             android:text="Add Savings"
             android:textColor="#000"
             android:textSize="20sp"

@@ -123,15 +123,16 @@
                 android:textColor="#ffffff"
                 android:textColorHint="#ffffff"
                 android:textSize="18sp" />
+
             <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnRules"
                 android:layout_width="wrap_content"
                 android:layout_height="30sp"
+                android:layout_marginLeft="270sp"
                 android:background="#D5CFCF"
                 android:text="Password Rules"
                 android:textColor="#000"
-                android:textSize="9sp"
-                android:id="@+id/btnRules"
-                android:layout_marginLeft="255sp"/>
+                android:textSize="9sp" />
 
             <TextView
                 android:id="@+id/textView11"
@@ -154,7 +155,7 @@
                 android:background="@drawable/edittext_background"
                 android:ems="10"
                 android:hint="Enter Your Mobile No"
-                android:inputType="textPassword"
+                android:inputType="number"
                 android:padding="12sp"
                 android:textColor="#ffffff"
                 android:textColorHint="#ffffff"

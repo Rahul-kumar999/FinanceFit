@@ -18,6 +18,7 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="?actionBarSize"
+            android:layout_marginTop="50sp"
             android:background="#370381"
             android:id="@+id/ToolbarDash">
 
@@ -34,7 +35,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="25sp"
+            android:layout_marginTop="40sp"
             android:text="Add Details"
             android:textColor="#E283F3"
             android:textStyle="bold"
@@ -164,7 +165,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/btnInvest"
-            android:layout_marginTop="20sp"
+            android:layout_marginTop="100sp"
             android:text="Go To My Investments"
             android:textColor="#fff"
             android:textSize="20sp"

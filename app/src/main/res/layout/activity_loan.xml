@@ -19,6 +19,7 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="?actionBarSize"
+            android:layout_marginTop="50sp"
             android:background="#370381"
             android:id="@+id/ToolbarDash">
 
@@ -58,7 +59,7 @@
         <androidx.appcompat.widget.AppCompatButton
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="0sp"
+            android:layout_marginTop="100sp"
             android:text="Add Loan"
             android:textColor="#000"
             android:textSize="20sp"

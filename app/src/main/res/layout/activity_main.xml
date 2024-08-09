@@ -121,8 +121,8 @@
 
                             <ImageView
                                 android:id="@+id/addImg"
-                                android:layout_width="30sp"
-                                android:layout_height="30sp"
+                                android:layout_width="50sp"
+                                android:layout_height="50sp"
 
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintEnd_toEndOf="parent"
@@ -157,8 +157,8 @@
 
                             <ImageView
                                 android:id="@+id/imageSend"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
+                                android:layout_width="50sp"
+                                android:layout_height="50sp"
 
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintEnd_toEndOf="parent"
@@ -193,8 +193,8 @@
 
                             <ImageView
                                 android:id="@+id/imageReceive"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
+                                android:layout_width="50sp"
+                                android:layout_height="50sp"
 
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintEnd_toEndOf="parent"
@@ -229,8 +229,8 @@
 
                             <ImageView
                                 android:id="@+id/imageInvest"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
+                                android:layout_width="50sp"
+                                android:layout_height="50sp"
 
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintEnd_toEndOf="parent"

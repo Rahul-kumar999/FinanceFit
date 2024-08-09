@@ -19,6 +19,7 @@
             android:layout_width="match_parent"
             android:layout_height="?actionBarSize"
             android:background="#370381"
+            android:layout_marginTop="50sp"
             android:id="@+id/ToolbarDash">
 
             <TextView
@@ -104,7 +105,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@drawable/edt_text_bg"
-                android:padding="5sp"
+                android:padding="4sp"
                 android:hint="Enter Your Address "
                 android:ems="3"
                 android:inputType="text"
@@ -185,7 +186,7 @@
                 android:background="@drawable/edt_text_bg"
                 android:hint="Enter Your Budget "
                 android:ems="8"
-                android:padding="5sp"
+                android:padding="4sp"
                 android:inputType="number"
                 android:textAlignment="viewEnd"
                 android:textColorHint="#000"
@@ -195,7 +196,7 @@
         <androidx.appcompat.widget.AppCompatButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30sp"
+            android:layout_marginTop="100sp"
             android:text="UPDATE"
             android:textColor="#000"
             android:textSize="20sp"
